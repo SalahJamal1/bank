@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h2 class="header-heading">Log in to get started</h2>
+        <a href="/">
+          <img src="img/logo.png" alt="logo" class="logo" />
+        </a>
+        <form action="#" class="form">
+          <input
+            type="text"
+            required
+            placeholder="user"
+            class="login user"
+            value="sa"
+          />
+          <input
+            type="password"
+            required
+            placeholder="pin"
+            class="login pin"
+            value="1111"
+          />
+          <button class="btn_login">→</button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section class="app">
+        <div class="info">
+          <h2 class="app_heading">
+            Current balance
+            <span class="date">As of 05/03/2037</span>
+          </h2>
+          <p class="balance">0000€</p>
+        </div>
+        <div class="grid">
+          <div class="movements">
+            <div class="movement">
+              <h2 class="movement_heading">
+                <span class="deposit">1 deposit</span>
+                <span class="days">3 days ago </span>
+              </h2>
+              <p class="amount">4 000€</p>
+            </div>
+            <div class="movement">
+              <h2 class="movement_heading">
+                <span class="withdrawal">1 deposit</span>
+                <span class="days">3 days ago </span>
+              </h2>
+              <p class="amount">4 000€</p>
+            </div>
+          </div>
+          <div class="transactions">
+            <div class="account">
+              <h2 class="transactions-heading">Transfer money</h2>
+              <form class="form-1 form_transfer">
+                <div class="transfer_form">
+                  <input
+                    type="text"
+                    class="user_name input"
+                    id="input_to"
+                    placeholder="user"
+                    value="mj"
+                  />
+                  <label for="input_to" class="label">Transfer to </label>
+                </div>
+                <div class="transfer_form">
+                  <input
+                    type="number"
+                    class="transfer_amount input"
+                    id="input_amount"
+                    placeholder="amount"
+                  />
+                  <label for="input_amount" class="label">Amount</label>
+                </div>
+                <button class="btn btn_transfer">→</button>
+              </form>
+            </div>
+            <div class="account">
+              <h2 class="transactions-heading">Request loan</h2>
+              <form class="form-1 form_loan">
+                <div class="transfer_form">
+                  <input
+                    type="number"
+                    id="loan"
+                    class="input"
+                    placeholder="amount"
+                  />
+                  <label for="loan" class="label">Amount</label>
+                </div>
+                <button class="btn btn_loan">→</button>
+              </form>
+            </div>
+            <div class="account">
+              <h2 class="transactions-heading">Close account</h2>
+              <form class="form-1 form_close">
+                <div class="transfer_form">
+                  <input
+                    type="text"
+                    class="input"
+                    id="users"
+                    placeholder="user"
+                  />
+                  <label for="users" class="label">Confirm user</label>
+                </div>
+                <div class="transfer_form">
+                  <input
+                    type="password"
+                    class="input pin"
+                    id="pass"
+                    placeholder="pin"
+                  />
+                  <label for="pass" class="label">Confirm PIN </label>
+                </div>
+                <button class="btn btn_close">→</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="info_list">
+          <ul class="list">
+            <li class="item">IN <span class="summary-in">0000€ </span></li>
+            <li class="item">out <span class="summary-out">0000€ </span></li>
+            <li class="item">
+              Intreast <span class="summary-int">0000€ </span>
+            </li>
+          </ul>
+          <button class="sort">↓ SORT</button>
+          <p class="timer">
+            You will be logged out in <span class="time"> 05:00 </span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script defer src="script.js"></script>
+  </body>
+</html>
